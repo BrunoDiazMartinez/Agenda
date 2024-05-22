@@ -1,0 +1,12 @@
+<link rel="import" href="../../../polymer/polymer-element.html">
+<link rel="import" href="./my-container-styles.html">
+
+<dom-module id="my-container">
+  <template>
+    <style include="my-container-styles"></style>
+    <p>Componente Hijo: [[inputValue]]</p>
+    <input class="bg-green" type="[[inputType]]" value="{{inputValue::input}}" placeholder="[[inputPlaceholder]]">
+  </template>
+
+  <script src="./my-container.js"></script>
+</dom-module>

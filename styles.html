@@ -1,0 +1,115 @@
+<dom-module id="styles">
+    <template>
+        <style>
+            :root {
+                --blanco: #ffffff;
+                --negro: #000000;
+                --primario: #25a6dc;
+                --secundario: #120f0d;
+                --terciario: #ed5525;
+                --cletter: #f8efe5;
+                --fuente: "Oswald", sans-serif;
+                ;
+            }
+
+            .page__head {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .page__head>* {
+                margin: 2rem;
+            }
+
+            .imagen {
+                background-image: url(./img/Agenda.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 400px;
+                position: relative;
+                border-radius: 1rem;
+            }
+
+            .contenido {
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.5);
+                width: 100%;
+                height: 100%;
+                border-radius: 1rem;
+            }
+
+            .contactos {
+                display: grid;
+                max-width: 120rem;
+                margin: 0 auto;
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 2rem;
+            }
+
+            .contacto {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 2rem;
+                font-size: 1.6rem;
+                border: solid var(--secundario) 3px;
+                border-radius: 1.5rem;
+                background-color: var(--terciario);
+            }
+
+            .add-contact {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 2rem;
+                font-size: 1.6rem;
+            }
+
+            .contacto__head {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 2rem;
+            }
+
+            .contacto__head>* {
+                margin: 0.6rem;
+            }
+
+            .icon-arrow {
+                background-color: var(--primario);
+                border-radius: 50%;
+            }
+
+            button {
+                border: none;
+                background: none;
+                font-family: var(--fuente);
+                font-size: 1.6rem;
+                margin: 1.6rem;
+            }
+
+            button:hover {
+                cursor: pointer;
+            }
+
+            input {
+                margin: 0.8rem;
+                border-radius: 1rem;
+                background: var(--blanco);
+            }
+            .texto__inicio{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: justify;
+                padding: 5rem;
+                font-size: 2rem;
+            }
+
+        </style>
+    </template>
+</dom-module>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>my-component demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-loader.js"></script>
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../my-component.html">
+    <link rel="import" href="../src/my-container/my-container.html">
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <custom-style>
+      <style>
+        :root{
+          --blanco: #ffffff;
+          --negro: #000000;
+          --primario: #25a6dc;
+          --secundario: #ed5525;
+          --fuente: "Oswald", sans-serif;
+        }
+        html{
+          font-size: 62.5%;
+          box-sizing: border-box;
+          font-family: var(--fuente);
+        }
+        body{
+          background-image: linear-gradient(to top, var(--primario) 30%,var(--blanco)100%);
+          color: var(--negro);
+        }
+        my-component{
+          font-size: 2rem;
+        }
+      </style>
+    </custom-style>
+  </head>
+  <body>
+    <my-component></my-component>
+  </body>
+  <script src="./my-component.js"></script>
+</html>
